@@ -47,8 +47,8 @@ def get_value_with_fallback(dataframe, year, month):
 # Meteorological Seasons
 seasons = {
     'Winter': ['Dec', 'Jan', 'Feb'],
-    'Pre-monsoon': ['Mar', 'Apr', 'May'],
-    'Monsoon': ['Jun', 'Jul', 'Aug', 'Sep'],
+    'Pre-monsoon': ['Feb', 'Mar', 'Apr', 'May', 'Jun'],
+    'Monsoon': ['Jul', 'Aug', 'Sep'],
     'Post-monsoon': ['Oct', 'Nov']
 }
 
@@ -242,7 +242,7 @@ def index():
         fig2.add_trace(go.Scatter(x=month_labels, y=f1_monthly, name='OMI-satellite', mode='lines+markers', line=dict(color='#ff6b6b', width=4, shape='spline'), marker=dict(size=12)))
         fig2.add_trace(go.Scatter(x=month_labels, y=f2_monthly, name='Dobson spectrophotometer', mode='lines+markers', line=dict(color='#4ecdc4', width=4, shape='spline'), marker=dict(size=12)))
         fig2.update_layout(
-            title=f'📈 Month-wise Seasonal Trend Analysis ({year_range})',
+            title=f'📈 Month-wise Trend Analysis ({year_range})',
             height=450,
             plot_bgcolor='#f8fafc',
             paper_bgcolor='white',
