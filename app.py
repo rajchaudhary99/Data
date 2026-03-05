@@ -99,7 +99,9 @@ def index():
         season_list = [('Winter', '🌨️'), ('Pre-monsoon', '☀️'), ('Monsoon', '🌧️'), ('Post-monsoon', '🍂')]
         
         for season_name, emoji in season_list:
-            season_months = seasons[season_name]
+            season_months = seasons.get(season_name, [])
+            if not season_months:
+                continue
             f1_seasonal, f2_seasonal, year_labels = [], [], []
             
             for year in years:
