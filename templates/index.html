@@ -9,10 +9,10 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
             min-height: 100vh;
             padding: 20px;
-            color: #e2e8f0;
+            color: #1e293b;
         }
         .container {
             max-width: 1800px;
@@ -30,7 +30,7 @@
         h1 {
             font-size: 48px;
             font-weight: 700;
-            background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 50%, #8b5cf6 100%);
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 10px;
@@ -38,17 +38,17 @@
         }
         .subtitle {
             font-size: 16px;
-            color: #94a3b8;
+            color: #64748b;
             font-weight: 300;
         }
         .controls {
-            background: rgba(30, 41, 59, 0.8);
+            background: white;
             backdrop-filter: blur(20px);
             padding: 30px;
             border-radius: 20px;
             margin-bottom: 30px;
-            border: 1px solid rgba(148, 163, 184, 0.1);
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
         }
         .control-group {
             display: flex;
@@ -59,7 +59,7 @@
         }
         label {
             font-weight: 600;
-            color: #cbd5e1;
+            color: #1e293b;
             font-size: 14px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -69,10 +69,10 @@
         select {
             padding: 12px 16px;
             font-size: 14px;
-            border: 1px solid rgba(148, 163, 184, 0.2);
+            border: 1px solid #cbd5e1;
             border-radius: 10px;
-            background: rgba(15, 23, 42, 0.5);
-            color: #e2e8f0;
+            background: white;
+            color: #1e293b;
             cursor: pointer;
             transition: all 0.3s ease;
             font-weight: 500;
@@ -80,14 +80,14 @@
             font-family: 'Poppins', sans-serif;
         }
         select:hover {
-            border-color: #06b6d4;
-            background: rgba(15, 23, 42, 0.8);
-            box-shadow: 0 0 20px rgba(6, 182, 212, 0.2);
+            border-color: #0f172a;
+            background: #f8fafc;
+            box-shadow: 0 0 20px rgba(15, 23, 42, 0.1);
         }
         select:focus {
             outline: none;
-            border-color: #3b82f6;
-            box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+            border-color: #0f172a;
+            box-shadow: 0 0 20px rgba(15, 23, 42, 0.2);
         }
         .info-grid {
             display: grid;
@@ -96,26 +96,26 @@
             margin-top: 25px;
         }
         .info-card {
-            background: linear-gradient(135deg, rgba(6, 182, 212, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%);
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%);
             padding: 20px;
             border-radius: 12px;
-            border: 1px solid rgba(6, 182, 212, 0.2);
+            border: 1px solid #e2e8f0;
             transition: all 0.3s ease;
         }
         .info-card:hover {
-            border-color: rgba(6, 182, 212, 0.5);
-            background: linear-gradient(135deg, rgba(6, 182, 212, 0.15) 0%, rgba(59, 130, 246, 0.15) 100%);
+            border-color: #cbd5e1;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.08) 0%, rgba(59, 130, 246, 0.08) 100%);
             transform: translateY(-2px);
         }
         .info-card h4 {
-            color: #06b6d4;
+            color: #0f172a;
             margin-bottom: 8px;
             font-size: 14px;
             font-weight: 600;
         }
         .info-card p {
             font-size: 13px;
-            color: #cbd5e1;
+            color: #475569;
             line-height: 1.5;
         }
         .charts-section {
@@ -123,12 +123,12 @@
             gap: 30px;
         }
         .chart-wrapper {
-            background: rgba(30, 41, 59, 0.6);
+            background: white;
             backdrop-filter: blur(20px);
             padding: 25px;
             border-radius: 16px;
-            border: 1px solid rgba(148, 163, 184, 0.1);
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
             animation: fadeIn 0.6s ease;
         }
         @keyframes fadeIn {
@@ -136,26 +136,26 @@
             to { opacity: 1; transform: translateY(0); }
         }
         .ml-insights {
-            background: linear-gradient(135deg, rgba(251, 146, 60, 0.1) 0%, rgba(249, 115, 22, 0.1) 100%);
+            background: linear-gradient(135deg, rgba(251, 146, 60, 0.08) 0%, rgba(249, 115, 22, 0.08) 100%);
             padding: 18px 20px;
             border-radius: 12px;
             margin-top: 20px;
             border-left: 4px solid #fb923c;
             font-size: 13px;
             line-height: 1.8;
-            color: #fed7aa;
+            color: #92400e;
             position: relative;
             border: 1px solid rgba(251, 146, 60, 0.2);
         }
         .ml-insights strong {
-            color: #fb923c;
+            color: #d97706;
             font-weight: 600;
         }
         .copy-btn {
             position: absolute;
             top: 12px;
             right: 12px;
-            background: rgba(251, 146, 60, 0.8);
+            background: #fb923c;
             color: white;
             border: none;
             padding: 8px 14px;
@@ -167,7 +167,7 @@
             font-family: 'Poppins', sans-serif;
         }
         .copy-btn:hover {
-            background: #fb923c;
+            background: #d97706;
             transform: scale(1.05);
         }
         .copy-btn.copied {

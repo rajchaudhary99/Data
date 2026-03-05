@@ -117,14 +117,14 @@ def index():
                 title=f'{emoji} {season_name} Season - Bar Chart ({"-".join(season_months)})',
                 barmode='group',
                 height=450,
-                plot_bgcolor='rgba(15, 23, 42, 0.3)',
-                paper_bgcolor='rgba(0, 0, 0, 0)',
-                font=dict(family='Poppins', color='#e2e8f0', size=12),
-                title_font=dict(size=18, color='#06b6d4'),
-                xaxis=dict(title=dict(text='Year →', font=dict(size=13, color='#cbd5e1')), tickangle=-45, gridcolor='rgba(148, 163, 184, 0.1)', showgrid=True),
-                yaxis=dict(title=dict(text='TCO Concentration (DU) ↑', font=dict(size=13, color='#cbd5e1'), standoff=15), gridcolor='rgba(148, 163, 184, 0.1)'),
+                plot_bgcolor='#f8fafc',
+                paper_bgcolor='white',
+                font=dict(family='Poppins', color='#1e293b', size=12),
+                title_font=dict(size=18, color='#0f172a'),
+                xaxis=dict(title=dict(text='Year →', font=dict(size=14, color='#0f172a', family='Poppins')), tickangle=-45, gridcolor='#e2e8f0', showgrid=True, showline=True, linewidth=2, linecolor='#1e293b'),
+                yaxis=dict(title=dict(text='TCO Concentration (DU) ↑', font=dict(size=14, color='#0f172a', family='Poppins'), standoff=15), gridcolor='#e2e8f0', showline=True, linewidth=2, linecolor='#1e293b'),
                 hovermode='x unified',
-                margin=dict(l=60, r=40, t=80, b=80)
+                margin=dict(l=80, r=40, t=80, b=80)
             )
             
             # Trend Chart
@@ -134,14 +134,14 @@ def index():
             fig_trend.update_layout(
                 title=f'{emoji} {season_name} Season - Trend Analysis ({"-".join(season_months)})',
                 height=450,
-                plot_bgcolor='rgba(15, 23, 42, 0.3)',
-                paper_bgcolor='rgba(0, 0, 0, 0)',
-                font=dict(family='Poppins', color='#e2e8f0', size=12),
-                title_font=dict(size=18, color='#06b6d4'),
-                xaxis=dict(title=dict(text='Year →', font=dict(size=13, color='#cbd5e1')), tickangle=-45, gridcolor='rgba(148, 163, 184, 0.1)', showgrid=True),
-                yaxis=dict(title=dict(text='TCO Concentration (DU) ↑', font=dict(size=13, color='#cbd5e1'), standoff=15), gridcolor='rgba(148, 163, 184, 0.1)'),
+                plot_bgcolor='#f8fafc',
+                paper_bgcolor='white',
+                font=dict(family='Poppins', color='#1e293b', size=12),
+                title_font=dict(size=18, color='#0f172a'),
+                xaxis=dict(title=dict(text='Year →', font=dict(size=14, color='#0f172a', family='Poppins')), tickangle=-45, gridcolor='#e2e8f0', showgrid=True, showline=True, linewidth=2, linecolor='#1e293b'),
+                yaxis=dict(title=dict(text='TCO Concentration (DU) ↑', font=dict(size=14, color='#0f172a', family='Poppins'), standoff=15), gridcolor='#e2e8f0', showline=True, linewidth=2, linecolor='#1e293b'),
                 hovermode='x unified',
-                margin=dict(l=60, r=40, t=80, b=80)
+                margin=dict(l=80, r=40, t=80, b=80)
             )
             
             # Generate ML insights
@@ -172,14 +172,14 @@ def index():
             title='📊 Year-wise Average Ozone Analysis',
             barmode='group',
             height=450,
-            plot_bgcolor='rgba(15, 23, 42, 0.3)',
-            paper_bgcolor='rgba(0, 0, 0, 0)',
-            font=dict(family='Poppins', color='#e2e8f0', size=12),
-            title_font=dict(size=18, color='#06b6d4'),
-            xaxis=dict(title=dict(text='Year →', font=dict(size=13, color='#cbd5e1')), tickangle=-45, gridcolor='rgba(148, 163, 184, 0.1)', showgrid=True),
-            yaxis=dict(title=dict(text='TCO Concentration (DU) ↑', font=dict(size=13, color='#cbd5e1'), standoff=15), gridcolor='rgba(148, 163, 184, 0.1)'),
+            plot_bgcolor='#f8fafc',
+            paper_bgcolor='white',
+            font=dict(family='Poppins', color='#1e293b', size=12),
+            title_font=dict(size=18, color='#0f172a'),
+            xaxis=dict(title=dict(text='Year →', font=dict(size=14, color='#0f172a', family='Poppins')), tickangle=-45, gridcolor='#e2e8f0', showgrid=True, showline=True, linewidth=2, linecolor='#1e293b'),
+            yaxis=dict(title=dict(text='TCO Concentration (DU) ↑', font=dict(size=14, color='#0f172a', family='Poppins'), standoff=15), gridcolor='#e2e8f0', showline=True, linewidth=2, linecolor='#1e293b'),
             hovermode='x unified',
-            margin=dict(l=60, r=40, t=80, b=80)
+            margin=dict(l=80, r=40, t=80, b=80)
         )
         
         # Trend Chart
@@ -189,14 +189,14 @@ def index():
         fig2.update_layout(
             title='📈 Year-wise Trend Analysis',
             height=450,
-            plot_bgcolor='rgba(15, 23, 42, 0.3)',
-            paper_bgcolor='rgba(0, 0, 0, 0)',
-            font=dict(family='Poppins', color='#e2e8f0', size=12),
-            title_font=dict(size=18, color='#06b6d4'),
-            xaxis=dict(title=dict(text='Year →', font=dict(size=13, color='#cbd5e1')), tickangle=-45, gridcolor='rgba(148, 163, 184, 0.1)', showgrid=True),
-            yaxis=dict(title=dict(text='TCO Concentration (DU) ↑', font=dict(size=13, color='#cbd5e1'), standoff=15), gridcolor='rgba(148, 163, 184, 0.1)'),
+            plot_bgcolor='#f8fafc',
+            paper_bgcolor='white',
+            font=dict(family='Poppins', color='#1e293b', size=12),
+            title_font=dict(size=18, color='#0f172a'),
+            xaxis=dict(title=dict(text='Year →', font=dict(size=14, color='#0f172a', family='Poppins')), tickangle=-45, gridcolor='#e2e8f0', showgrid=True, showline=True, linewidth=2, linecolor='#1e293b'),
+            yaxis=dict(title=dict(text='TCO Concentration (DU) ↑', font=dict(size=14, color='#0f172a', family='Poppins'), standoff=15), gridcolor='#e2e8f0', showline=True, linewidth=2, linecolor='#1e293b'),
             hovermode='x unified',
-            margin=dict(l=60, r=40, t=80, b=80)
+            margin=dict(l=80, r=40, t=80, b=80)
         )
         
         # Generate ML insights
@@ -227,14 +227,14 @@ def index():
             title=f'📊 Month-wise Average Ozone Analysis ({year_range})',
             barmode='group',
             height=450,
-            plot_bgcolor='rgba(15, 23, 42, 0.3)',
-            paper_bgcolor='rgba(0, 0, 0, 0)',
-            font=dict(family='Poppins', color='#e2e8f0', size=12),
-            title_font=dict(size=18, color='#06b6d4'),
-            xaxis=dict(title=dict(text='Month (2004 - 2025) →', font=dict(size=13, color='#cbd5e1')), gridcolor='rgba(148, 163, 184, 0.1)', showgrid=True),
-            yaxis=dict(title=dict(text='TCO Concentration (DU) ↑', font=dict(size=13, color='#cbd5e1'), standoff=15), gridcolor='rgba(148, 163, 184, 0.1)'),
+            plot_bgcolor='#f8fafc',
+            paper_bgcolor='white',
+            font=dict(family='Poppins', color='#1e293b', size=12),
+            title_font=dict(size=18, color='#0f172a'),
+            xaxis=dict(title=dict(text='Month (2004 - 2025) →', font=dict(size=14, color='#0f172a', family='Poppins')), gridcolor='#e2e8f0', showgrid=True, showline=True, linewidth=2, linecolor='#1e293b'),
+            yaxis=dict(title=dict(text='TCO Concentration (DU) ↑', font=dict(size=14, color='#0f172a', family='Poppins'), standoff=15), gridcolor='#e2e8f0', showline=True, linewidth=2, linecolor='#1e293b'),
             hovermode='x unified',
-            margin=dict(l=60, r=40, t=80, b=80)
+            margin=dict(l=80, r=40, t=80, b=80)
         )
         
         # Trend Chart
@@ -244,14 +244,14 @@ def index():
         fig2.update_layout(
             title=f'📈 Month-wise Seasonal Trend Analysis ({year_range})',
             height=450,
-            plot_bgcolor='rgba(15, 23, 42, 0.3)',
-            paper_bgcolor='rgba(0, 0, 0, 0)',
-            font=dict(family='Poppins', color='#e2e8f0', size=12),
-            title_font=dict(size=18, color='#06b6d4'),
-            xaxis=dict(title=dict(text='Month (2004 - 2025) →', font=dict(size=13, color='#cbd5e1')), gridcolor='rgba(148, 163, 184, 0.1)', showgrid=True),
-            yaxis=dict(title=dict(text='TCO Concentration (DU) ↑', font=dict(size=13, color='#cbd5e1'), standoff=15), gridcolor='rgba(148, 163, 184, 0.1)'),
+            plot_bgcolor='#f8fafc',
+            paper_bgcolor='white',
+            font=dict(family='Poppins', color='#1e293b', size=12),
+            title_font=dict(size=18, color='#0f172a'),
+            xaxis=dict(title=dict(text='Month (2004 - 2025) →', font=dict(size=14, color='#0f172a', family='Poppins')), gridcolor='#e2e8f0', showgrid=True, showline=True, linewidth=2, linecolor='#1e293b'),
+            yaxis=dict(title=dict(text='TCO Concentration (DU) ↑', font=dict(size=14, color='#0f172a', family='Poppins'), standoff=15), gridcolor='#e2e8f0', showline=True, linewidth=2, linecolor='#1e293b'),
             hovermode='x unified',
-            margin=dict(l=60, r=40, t=80, b=80)
+            margin=dict(l=80, r=40, t=80, b=80)
         )
         
         # Generate ML insights
